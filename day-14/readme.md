@@ -47,3 +47,5 @@ V      V
 Of particular interest is the region marked 8; while it does not appear contiguous in this small view, all of the squares marked 8 are connected when considering the whole 128x128 grid. In total, in this example, 1242 regions are present.
 
 How many regions are present given your key string?
+
+#### Your puzzle input was xlqgujun.
