@@ -68,7 +68,6 @@ def battle_status(player: Player, boss: Boss) -> str:
         return None
 
 lowest_mana_spent = float(+inf)
-manas_spent = set()
 
 for _ in range(10000):
     player = Player()
