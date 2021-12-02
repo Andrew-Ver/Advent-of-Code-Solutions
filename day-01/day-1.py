@@ -11,13 +11,13 @@ for num in puzzle_input:
     prev = num
 
 part_two = 0
-prev = None
+prev = puzzle_input[:3]
 
-for i in range(len(puzzle_input)-2):
-    if prev != None:
-        if sum(puzzle_input[i:i+3]) > prev:
-            part_two += 1
-    prev = sum(puzzle_input[i:i+3])
+for i in range(len(puzzle_input)):
+    curr_window = (prev[1:] + [puzzle_input[i]])
+    if sum(curr_window) > sum(prev):
+        part_two += 1
+    prev = curr_window
 
 print(f'Part One: {part_one}')
 print(f'Part Two: {part_two}')
