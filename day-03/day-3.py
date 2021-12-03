@@ -9,7 +9,7 @@ epsilon_rate = int(''.join([max(ln, key = lambda x: ln.count(x)) for ln in epsil
 
 print(f'Part One: {gamma_rate * epsilon_rate}')
 
-# keep values with a 0 in the position being considered.
+#Part Two
 def oxygen_genrator_rating(report: list[int]) -> tuple[int, int]:
     most_common_bits = []
     possible = report
@@ -34,8 +34,6 @@ def oxygen_genrator_rating(report: list[int]) -> tuple[int, int]:
 
         if len(possible) == 1:
             return int(''.join(possible[0]), 2)
-
-    return int(''.join(most_common_bits), 2)
     
 def co2_scrubber_rating(report: list[int]) -> tuple[int, int]:
     least_common_bits = []
@@ -61,7 +59,5 @@ def co2_scrubber_rating(report: list[int]) -> tuple[int, int]:
         
         if len(possible) == 1:
             return int(''.join(possible[0]), 2)
-
-    return int(''.join(least_common_bits), 2)
 
 print(f'Part Two: {oxygen_genrator_rating(puzzle_input) * co2_scrubber_rating(puzzle_input)}')
