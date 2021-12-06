@@ -4,7 +4,7 @@ from collections import Counter, defaultdict
 with open('input', 'r') as f:
 	puzzle_input = [int(n) for n in re.findall(r'\d+', f.readline())]
 
-def update_fish(fish: list[int], iterations: int) -> list[int]:
+def update_fish(fish: list[int], iterations: int) -> int:
     fish_counter = defaultdict(int, Counter(fish))
     total_fish = sum(fish_counter.values())
 
