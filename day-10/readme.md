@@ -55,7 +55,7 @@ Did you know that syntax checkers actually have contests to see who can get the 
 ```
 In the above example, an illegal ) was found twice (2*3 = 6 points), an illegal ] was found once (57 points), an illegal } was found once (1197 points), and an illegal > was found once (25137 points). So, the total syntax error score for this file is 6+57+1197+25137 = 26397 points!
 
-# Find the first illegal character in each corrupted line of the navigation subsystem. What is the total syntax error score for those errors?
+#### Find the first illegal character in each corrupted line of the navigation subsystem. What is the total syntax error score for those errors?
 
 ### --- Part Two ---
 
@@ -98,4 +98,4 @@ The five lines' completion strings have total scores as follows:
 ```
 Autocomplete tools are an odd bunch: the winner is found by sorting all of the scores and then taking the middle score. (There will always be an odd number of scores to consider.) In this example, the middle score is 288957 because there are the same number of scores smaller and larger than it.
 
-# Find the completion string for each incomplete line, score the completion strings, and sort the scores. What is the middle score?
+#### Find the completion string for each incomplete line, score the completion strings, and sort the scores. What is the middle score?
