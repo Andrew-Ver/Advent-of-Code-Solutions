@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Advent-of-Code-Solutions
 Consolidated Advent of Code solutions from previous years. 
 =======
@@ -17,3 +18,7 @@ Solutions to Advent of Code 2016 in Python
 # Advent-Of-Code-2017
 Solutions to Advent of Code 2017 in Python 
 >>>>>>> 2017/main
+=======
+# Advent-Of-Code-2021
+My Solutions to Advent of Code 2021 in Python
+>>>>>>> 2021/main
