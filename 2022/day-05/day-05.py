@@ -34,14 +34,10 @@ crate_stacks_copy: dict[list] = deepcopy(crate_stacks)
 for n, A, B in instructions:
     # For Part One
     sub_stack: list[str] = [crate_stacks[A].pop() for _ in range(n)]
-
-    # For Part Two
-    sub_stack_part_two: list[str] = [crate_stacks_copy[A].pop() for _ in range(n)]
-
-    # For Part One
     crate_stacks[B] += sub_stack
 
-    # For Part Two
+    # Part Two
+    sub_stack_part_two: list[str] = [crate_stacks_copy[A].pop() for _ in range(n)]
     crate_stacks_copy[B] += reversed(sub_stack_part_two)
 
 
