@@ -11,16 +11,14 @@ needed_cycles: set[int] = {20, 60, 100, 140, 180, 220}
 
 for cmd in puzzle_input:
     if cmd[0] == 'addx':
-
-        for i in range(2):
+        for _ in range(2):
             curr_cycle += 1
-            if curr_cycle in {20, 60, 100, 140, 180, 220}:
+            if curr_cycle in needed_cycles:
                 signal_sum += (X_register * curr_cycle)
         X_register += int(cmd[1])
-
     else:
         curr_cycle += 1
-        if curr_cycle in {20, 60, 100, 140, 180, 220}:
+        if curr_cycle in needed_cycles:
             signal_sum += (X_register * curr_cycle)
 
 print(f'Part One: {signal_sum}')
